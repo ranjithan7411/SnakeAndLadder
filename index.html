@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Snake And Ladder</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href = "Snake.css">
+</head>
+<body>
+<div id = "container">
+	<div id = "head">
+		<h1 class="heading">SNAKES AND LADDERS</h1><br><br><br> 
+		<button class="btn" onclick="singleplayer()">Single Player</button>
+		<button class="btn" onclick="multiplayer()">Multi Player</button>
+		<button class="btn"  id="about" onclick="aboutGame()">About Game</button>
+		<p id="msg"></p>
+	</div> 
+
+	<div id="game">
+		<div>
+			<canvas id="board" width="600" height="600" style="border:1px solid black;"></canvas>
+		</div>
+		
+    <div id="dice">
+			<div id="diceHead">
+					<h1>SNAKES AND LADDERS</h1><br><br><br>
+				<div id="sbtn">
+					<p id="splayer"></p>
+					<button id="dicebtn" onclick="play()">Roll Dice</button>
+					<button id="reset" onclick="singlereset()">RESTART</button>
+				</div>
+				<div id="mbtn">
+					<p id ="mplayer"></p>
+					<button id="reset" onclick="multireset()">RESTART</button>
+					<button id="btn1" onclick="start()">play</button>
+				</div>
+			</div>
+			<div id="main">
+				<div id="cube">
+					<div class="cubeFace"></div>
+					<div class="cubeFace face2"></div>
+				</div>
+				<div id="overlay" onclick="off()">
+					<div id="number"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script  src = "script.js"></script>
+<script  src = "sample.js"></script>
+</body>
+</html>
